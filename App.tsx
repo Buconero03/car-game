@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import GameCanvas from './components/GameCanvas';
-import CrewChief from './components/CrewChief';
+
 import { GameState, CarStats } from './types';
 
 const App: React.FC = () => {
@@ -37,12 +37,7 @@ const App: React.FC = () => {
         onCrash={handleCrash}
       />
 
-      <CrewChief 
-        gameState={gameState} 
-        carStats={carStats} 
-        lastEvent={lastEvent}
-      />
-
+     
       {/* Main Menu */}
       {gameState === GameState.MENU && (
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/90 z-50 backdrop-blur-md">
