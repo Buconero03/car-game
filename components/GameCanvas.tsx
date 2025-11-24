@@ -486,7 +486,16 @@ const GameCanvas: React.FC<GameCanvasProps> = ({ gameState, onStatsUpdate, onCra
     };
   }, [gameState]); 
 
-  return <canvas ref={canvasRef} className="w-full h-full block bg-slate-950" />;
+   return (
+    <canvas
+      ref={canvasRef}
+      className="block bg-slate-950"
+      style={{
+        width: '100vw',   // larghezza = larghezza finestra
+        height: '100vh',  // altezza = altezza finestra
+      }}
+    />
+  );
 };
 
 export default GameCanvas;
