@@ -2,12 +2,24 @@
 <html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <title>GameX Arcade</title>
+    <title>Neon Velocity</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html, body, #root {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        background: #020617;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
-    <!-- ATTENZIONE A QUESTA RIGA -->
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
